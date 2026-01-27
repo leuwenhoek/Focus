@@ -118,7 +118,7 @@ def monitor_brave_tabs():
                         except Exception as e:
                             print(f"Error closing tab: {e}")
             
-            blocked_apps = ['chrome', 'notepad', 'slack', 'task manager']
+            blocked_apps = ['chrome', 'notepad', 'slack','discord']
             for proc in psutil.process_iter(['pid', 'name']):
                 try:
                     proc_name = proc.info['name'].lower()
