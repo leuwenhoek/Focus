@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOCUS | Download</title>
+    <style>
+        :root {
+            --primary-color: #ff7b00; /* Brave-style Orange */
+            --bg-color: #1c1e21;
+            --card-bg: #2d2f34;
+            --text-color: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            max-width: 550px;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+            border: 1px solid #444;
+        }
+        .header { text-align: center; margin-bottom: 30px; }
+        .os-tag {
+            background: #3a3d42;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #bbb;
+        }
+        .warning-box {
+            background-color: rgba(255, 152, 0, 0.1);
+            border-left: 4px solid #ff9800;
+            padding: 15px;
+            margin: 20px 0;
+            font-size: 0.9rem;
+            color: #ffcc80;
+        }
+        .steps {
+            list-style: none;
+            padding: 0;
+        }
+        .steps li {
+            margin-bottom: 18px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .step-num {
+            background: var(--primary-color);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        .btn-container { text-align: center; margin-top: 35px; }
+        .download-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 10px;
+            display: inline-block;
+            transition: transform 0.2s, background 0.2s;
+        }
+        .download-btn:hover {
+            background-color: #e66e00;
+            transform: translateY(-2px);
+        }
+        code { background: #111; padding: 2px 5px; border-radius: 4px; color: #ff7b00; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <div class="header">
+        <span class="os-tag">Windows Only</span>
+        <h1>FocusShield .exe</h1>
+    </div>
+    
+    <div class="warning-box">
+        <strong>Security Note:</strong> This app is 100% clean. Any Firewall/Defender alerts are "False Positives" due to the script's system-level locking mechanism.
+    </div>
+
+    <ul class="steps">
+        <li>
+            <div class="step-num">1</div>
+            <div>Download the <code>.exe</code> file and save it to your desktop.</div>
+        </li>
+        <li>
+            <div class="step-num">2</div>
+            <div>Run the file. When prompted by Windows Defender, click <strong>"More Info"</strong> &rarr; <strong>"Run Anyway"</strong>.</div>
+        </li>
+        <li>
+            <div class="step-num">3</div>
+            <div><strong>Critical:</strong> You must use the <strong>Brave Browser</strong>. All other browsers will be restricted.</div>
+        </li>
+        <li>
+            <div class="step-num">4</div>
+            <div>For the next 8 hours, you can only access <strong>YouTube</strong> and <strong>Gemini</strong>.</div>
+        </li>
+        <li>
+            <div class="step-num">5</div>
+            <div>To exit: Open <strong>Task Manager</strong> (Ctrl+Shift+Esc) and end the <strong>two parallel processes</strong>.</div>
+        </li>
+    </ul>
+
+    <div class="btn-container">
+        <a href="{{ download_url }}" class="download-btn">Download for Windows</a>
+    </div>
+</div>
+
+</body>
+</html>
